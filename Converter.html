@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+        <nav>
+        <ul>
+            <li><a href="Home.html">Homepage</a></li>
+            <li><a href="mark.html">Mark to Grade converter</a></li>
+            <li><a href="staff.html">Staff Page</a></li>
+            <li><a href="Converter.html">Temperature Converter</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1>Temperature Converter</h1>
+
+    <div class="input">
+        <label for="tempInput">Enter Temperature:</label>
+        <input type="number" id="tempInput" placeholder="Enter value" oninput="convertTemperature()">
+        
+        <label for="tempUnit" style="margin-top: 1rem;">From Unit:</label>
+        <select id="tempUnit" onchange="convertTemperature()" style="padding: 0.5rem; font-size: 1rem; border-radius: 4px; width: 215px;">
+            <option value="C">Celsius (°C)</option>
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="K">Kelvin (K)</option>
+        </select>
+    </div>
+    <div id="converterOutput" style="text-align: center; margin-top: 2rem; font-size: 1.3rem; line-height: 2rem;">
+    </div>
+</body>
+<footer>
+  <p>&copy; 2026 Kevin. All rights reserved.</p>
+</footer>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+        <nav>
+        <ul>
+            <li><a href="Home.html">Homepage</a></li>
+            <li><a href="mark.html">Mark to Grade converter</a></li>
+            <li><a href="staff.html">Staff Page</a></li>
+            <li><a href="Converter.html">Temperature Converter</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="staff">
+        <h1>Staff Information</h1>
+        <div class="sort-buttons">
+      <button onclick="sortByName()">Sort by Name</button>
+      <button onclick="sortBySalary()">Sort by Salary</button>
+
+      <table id="staffTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Location</th>
+            <th>Employee</th>
+            <th>Start Date</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody id="staffBody"></tbody>
+</table>
+    </div>
+    </div>
+    
+</body>
+<footer>
+  <p>&copy; 2026 Kevin. All rights reserved.</p>
+</footer>
+</html>
